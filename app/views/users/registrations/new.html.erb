@@ -1,4 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <h2>Sign up</h2>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link 
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+rel="stylesheet">
+  <script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.j
+s"></script>
+</head>
+
+<body>
+
+<div class="container-fluid p-5 bg-primary text-white text-left">
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "users/shared/error_messages", resource: resource %>
@@ -21,9 +39,15 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+  
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
 
+<div class="container-fluid p-5 bg-info text-left">
 <%= render "users/shared/links" %>
+</div>
+
+</div>
+</body>
